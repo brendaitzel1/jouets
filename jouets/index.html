@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jouets</title>
+    <link rel="stylesheet" href="/jouets/menu.css">
+    <link rel="stylesheet" href="/jouets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <link rel="icon" href="/jouets/img/Logo.jpeg">
+    
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <section class="menu__container">
+                <h1 class="menu__logo">
+                   <a href="/jouets/index.html"> <img src="/jouets/img/Logo.jpeg" class="menu_logo" alt=""></a>
+                </h1>
+                  
+                <ul class="menu__links">
+                    <li class="menu__item">
+                        <a href="/jouets/index.html" class="menu__link">Inicio</a>
+                    </li>
+        
+                    <li class="menu__item menu__item--show">
+                        <a href="#" class="menu__link">Categorías <img src="/jouets/img/arrow.svg" class="menu__arrow"></a>
+        
+                        <ul class="menu__nesting">
+                            <li class="menu__inside">
+                                <a href="/categorias/StarWars.html" class="menu__link menu__link--inside">Star Wars</a>
+                            </li>
+                            <li class="menu__inside">
+                                <a href="/categorias/Legos.html" class="menu__link menu__link--inside">Legos</a>
+                            </li>
+                            <li class="menu__inside">
+                                <a href="/categorias/FunkoPop.html" class="menu__link menu__link--inside">Funko Pop</a>
+                            </li>
+                            <li class="menu__inside">
+                                <a href="/categorias/He-man.html" class="menu__link menu__link--inside">He-man</a>
+                            </li>
+                            <li class="menu__inside">
+                                <a href="/categorias/HotWheels.html" class="menu__link menu__link--inside">Hot Wheels</a>
+                            </li>
+                            <li class="menu__inside">
+                                <a href="/categorias/Kaws.html" class="menu__link menu__link--inside">Kaws</a>
+                            </li>
+                            <li class="menu__inside">
+                                <a href="/categorias/Anime.html" class="menu__link menu__link--inside">Anime</a>
+                            </li>
+                            <li class="menu__inside">
+                                <a href="/categorias/Hot-Toys.html" class="menu__link menu__link--inside">Hot Toys</a>
+                            </li>
+                            <li class="menu__inside">
+                                <a href="/categorias/PlayMobil.html" class="menu__link menu__link--inside">PlayMobil</a>
+                            </li>
+                            </li>
+                            <li class="menu__inside">
+                                <a href="/categorias/Retro.html" class="menu__link menu__link--inside">Retro</a>
+                            </li>
+                        </ul>
+                    </li>
+        
+                    <li class="menu__item  menu__item--show">
+                        <a href="#" class="menu__link">Cuenta<img src="/jouets/img/arrow.svg" class="menu__arrow"></a>
+        
+                        <ul class="menu__nesting">
+                            <li class="menu__inside">
+                                <a href="/Forms/Login.html" class="menu__link menu__link--inside">Iniciar Sesión</a>
+                            </li>
+                            <li class="menu__inside">
+                                <a href="/Forms/Registre.html" class="menu__link menu__link--inside">Registrarse</a>
+                            </li>
+                        </ul>
+                    </li> 
+    
+                    <li class="menu__item">
+                        <a href="/comunidad/comunidad.html" class="menu__link">Comunidad</a>
+                    </li>
+        
+    
+                    <li class="menu__item">
+                        <a href="/contacto/contacto.html" class="menu__link">Contacto</a>
+                    </li>
+
+                    <div>
+                        <img onmouseover="showCart(this)" class="cart" src="/jouets/img/cart.png" alt="">
+                        <p class="count-product">0</p>
+                    </div>
+                    <div class="cart-products" id="products-id">
+                        <p class="close-btn" onclick="closeBtn()">X</p>
+                        <h3>Mi carrito</h3>
+                        <div class="card-items">
+                        </div>
+                    </div>
+            
+                </ul>
+    
+                <div class="menu__hamburguer">
+                    <img src="/jouets/img/menu.svg" class="menu__img">
+                </div>
+            </section>
+        </nav>
+        <script src="/jouets/app.js"></script>
+        </header>
+
+          <!-- banner -->
+         <section class="bio-container">
+           <div class="bio-banner">
+          <div class="bio-details">
+            <h1>Jouets</h1>
+            <p>¡Detrás de cada juguete también se hace historia!</p>
+          </div>
+          <figure>
+            <img class="bio-img" src="/jouets/img/storm.jpg">
+          </figure>
+          </div>
+         </section>
+
+            <!-- card -->
+    <div class="container">
+
+        <h1 class="heading">Categorías</h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <img src="/jouets/img/starwars.jpg">
+                <h3>Star Wars</h3>
+                <a href="/categorias/StarWars.html" class="btn">Buscar</a>
+            </div>
+    
+            <div class="box">
+                <img src="/jouets/img/legos.jpg">
+                <h3>Legos</h3>
+                <a href="/categorias/Legos.html" class="btn">Buscar</a>
+            </div>
+    
+            <div class="box">
+                <img src="/jouets/img/funkopop.jpg">
+                <h3>Funko Pop!</h3>
+                <a href="/categorias/FunkoPop.html" class="btn">Buscar</a>
+            </div>
+
+            <div class="box">
+                <img src="/jouets/img/he-man.jpg">
+                <h3>He-man</h3>
+                <a href="/categorias/He-man.html" class="btn">Buscar</a>
+            </div>
+
+            <div class="box">
+                <img src="/jouets/img/hot-wheels.png">
+                <h3>Hot Wheels</h3>
+                <a href="/categorias/HotWheels.html" class="btn">Buscar</a>
+            </div>
+
+            <div class="box">
+                <img src="/jouets/img/kaws.jpg">
+                <h3>Kaws</h3>
+                <a href="/categorias/Kaws.html" class="btn">Buscar</a>
+            </div>
+
+            <div class="box">
+                <img src="/jouets/img/anime.png">
+                <h3>Anime</h3>
+                <a href="/categorias/Anime.html" class="btn">Buscar</a>
+            </div>
+
+            <div class="box">
+                <img src="/jouets/img/hot-toys.jpg">
+                <h3>Hot Toys</h3>
+                <a href="/categorias/Hot-Toys.html" class="btn">Buscar</a>
+            </div>
+
+            <div class="box">
+                <img src="/jouets/img/playmobil.png">
+                <h3>PlayMobil</h3>
+                <a href="/categorias/PlayMobil.html" class="btn">Buscar</a>
+            </div>
+
+            <div class="box">
+                <img src="/jouets/img/retro.jpg">
+                <h3>Retro</h3>
+                <a href="/categorias/Retro.html" class="btn">Buscar</a>
+            </div>
+        </div>
+    </div>
+    <script src="/Principal/app.js"></script>
+
+    
+          <!-- footer -->
+ <footer class="pie-pagina">  
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="/jouets/img/Logo.jpeg">
+                </a>
+            </figure>
+        </div>
+
+        <div class="contact">
+            <p class="contact-email">Enviame un <a href="bren.itzel14@gmail.com"> email</a></p>
+        </div>
+
+        <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="red-social">
+                <a href="https://instagram.com/brenditzel?r=nametag" class="fa fa-instagram"> <img src="./img/icons8-instagram.svg" ></a>
+                <a href="https://github.com/brendaitzel1" class="fa fa-github"> <img src="./img/icons8-github.svg"></a>
+            </div>
+
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2022 <b> Jouets</b> - Todos los Derechos Reservados.</small>
+    </div>
+</footer>
+</body>
+</html>
+     

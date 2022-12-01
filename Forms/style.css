@@ -1,0 +1,95 @@
+body {
+    background-image: url(./img/10792.jpg);
+  }
+  
+  .login, .registre {
+    width: 400px;
+    height: 598px;
+    margin: 16px auto;
+    font-size: 16px;
+    padding-top: 40px;
+    padding-bottom: 35px;
+  }
+  
+  .login-header, .registre-header, .registre p,
+  .login p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .login-header, .registre-header {
+    background: #fff;
+    padding: 20px;
+    font-size: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+  }
+  
+  .login-container, .registre-container {
+    background: #fff;
+    padding: 12px;
+    border-radius: 10px;
+  }
+  
+  .login p ,.registre p{
+    padding: 12px;
+  }
+  
+  .login input ,.registre input{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+    outline: 0;
+    font-family: inherit;
+    font-size: 0.95em;
+  }
+  
+  .login input[type="email"],
+  .login input[type="password"] ,
+  .registre input[type="email"],
+  .registre input[type="password"]
+  .registre input[type="name"]
+  .registre input[type="user"]{
+    background: #fff;
+    border-color: #bbb;
+    color: #000;
+  }
+  
+  
+  .login input[type="email"]:focus,
+  .login input[type="password"]:focus,
+  .registre input[type="email"]:focus,
+  .registre input[type="password"]:focus 
+  .registre input[type="name"]:focus,
+  .registre input[type="user"]:focus{
+    border-color: #000;
+  }
+  
+  .login input[type="submit"],
+  .registre input[type="submit"] {
+    background: #000;
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .login input[type="submit"]:hover,
+  .registre input[type="submit"]:hover {
+    background: red;
+  }
+  
+  .login input[type="submit"]:focus ,
+  .registre input[type="submit"]:focus {
+    border-color: #000;
+  }
+  
+  @media (min-width:360px) and (max-width:1280px){
+    .login, .registre{
+        padding:20px;
+    }
+  }

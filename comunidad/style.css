@@ -1,0 +1,321 @@
+:root {
+    --yellow-color:#C63637 ;
+    --black-color: #383632;
+  }
+  @font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    src: local('Ubuntu'),
+         url(fonts/Ubuntu-Regular.ttf) format('truetype');
+  }
+  html, body {
+    height: 100%;
+    font-family: 'Ubuntu';
+    font-size: 20px;
+    margin: 0;
+    
+    
+    
+    
+  }
+  a{
+    color: black;
+    text-decoration: none;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  .buttons > a {
+    margin: 10px
+  }
+  .custom-button{
+    padding: 12px 20px;
+  }
+  .custom-button.main{
+    background-color: var(--yellow-color);
+  }
+  .custom-button.invert{
+    border: 1px solid black;
+  }
+  
+  .hero{
+    display: flex;
+    background-color: var(--yellow-color);
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .hero > .hero-content{
+    max-width: 650px;
+  }
+  .hero > .hero-content > h1{
+    font-size: 5vw;
+    margin: 0;
+  }
+  .hero > .hero-content > p{
+    font-size: 3vw;
+    margin: 20px 0;
+  }
+  .hero > .hero-content > .social svg{
+    width: 50px;
+    margin-right: 10px;
+  }
+  .hero > .hero-logo{
+    width: 300px;
+    height: 300px;
+    background-image: url('./images/logos/logo-original.svg');
+    background-size: cover;
+  }
+  
+  .wrapper{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10% 2% 0;
+    text-align: center;
+  }
+  .wrapper > .subtitle{
+    width: fit-content;
+    margin-bottom: 30px;
+  }
+  .wrapper > .subtitle > h2{
+    font-size: 2rem;
+    margin: 5px 0;
+  }
+  .wrapper > .subtitle > .underline{
+    background-color: var(--yellow-color);
+    width: 80%;
+    height: 4px;
+    margin: 0 auto;
+  }
+  .wrapper > .content{
+    max-width: 800px;
+  }
+  .wrapper > .content > .grid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .wrapper > .content > .grid > .item{
+    margin: 20px;
+  }
+  .wrapper > .content > .grid > .item > .image{
+    background-color: lightgoldenrodyellow;
+    width: 150px;
+    height: 150px;
+  }
+  .wrapper > .content > .grid > .item > .image img{
+    width: 100%;
+  }
+  .wrapper > .content > .grid > .item p{
+    font-size: 16px;
+  }
+  
+  .schedule {
+    padding: 100px 0 0;
+  }
+  .panel > .content-box {
+    background-color: var(--yellow-color);
+    width: 95%;
+    margin: auto;
+    padding: 5%;
+  }
+  .panel > .content-box > h2 {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+  .panel > .content-box > div {
+    font-size: 20px;
+  }
+  .LimaJS-schedule ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--yellow-color);
+    padding: 40px 30px;
+  }
+  .footer > .text{
+    display: flex;
+    align-items: center;
+  }
+  .footer > .text > img{
+    width: 30px;
+  }
+  .footer > .text > span{
+    margin-left: 10px;
+  }
+  .footer > .social svg{
+    width: 30px;
+    margin-left: 10px;
+  }
+  
+  @media screen and (max-width: 480px){
+    .hero{
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+    .hero > .hero-content{
+      text-align: center;
+    }
+    .hero > .hero-content > h1{
+      font-size: 30px;
+    }
+    .hero > .hero-content > p{
+      font-size: 20px;
+    }
+    .hero > .hero-content > .social svg{
+      width: 20px;
+      margin-right: 5px;
+    }
+    .hero > .hero-logo{
+      width: 150px;
+      height: 150px;
+      margin-bottom: 30px;
+    }
+  
+    .wrapper > .subtitle > h2, .panel > .content-box > h2{
+      font-size: 25px;
+    }
+  
+    .footer > .social svg{
+      width: 20px;
+      margin-left: 5px;
+    }
+  }
+  
+  @media screen and (max-width: 800px){
+    .hero > .hero-content{
+      max-width: 300px;
+    }
+  }
+
+
+  .contenedor{
+    background-color: rgba(29, 27, 27, 0.312);
+    width: 600 px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5000px;
+
+  }
+  
+  .contenedor-2{
+    width: 600 px;
+    height: auto;
+    background-color: rgba(42, 44, 45, 0.222);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px 20px 30px 20px;
+    gap: 20px;
+    text-transform: capitalize;
+    border-radius: 1000px;
+    color: aqua;
+  }
+
+  .comentario{
+    background-color: rgba(69, 128, 211, 0.304);
+    width: 100 px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 20px;
+    border-radius: 20px;
+    color: black;
+
+  }
+
+  .contenedor-agg-com{
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .imagen-usuario{
+    width: 50 px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+  }
+
+  img{
+    width: 50px;
+  }
+
+  .input-com{
+    width: 500px;
+    height: 100px;
+    background:none ;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    gap: 5px;
+  }
+
+  #nuevoComentario{
+    outline: none;
+    border: 0;
+    width: 100px;
+    height: 50px;
+    padding:  0 10px 0 10px;
+    font-size: 15px;
+    background-color: transparent;
+    color: black;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+  } 
+
+  #nuevoComentario::placeholder{
+    color: #000;
+  }
+
+  #nuevoComentario:focus{
+    border-bottom: 2px solid rgba(82, 77, 250, 0.375)
+}
+
+.btn-agg{
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 5px 0px 5px;
+
+}
+
+button{
+  padding: 12px 20px 12px 20px;
+  border-radius: 20px;
+  border: 0;
+  outline: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.close{
+  font-size: 12px;
+  position: absolute;
+  right: 150px;
+  width: 20px;
+  z-index: 20;
+  transition-duration: 200ms;
+  display: block;
+  cursor: pointer;
+  color:#071e6c
+}
+ h2{
+  text-align: center;
+ }
